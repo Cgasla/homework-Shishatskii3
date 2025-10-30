@@ -7,6 +7,8 @@ int main() {
     string name;
     int age;
     char again;
+    int peopleCount = 0;
+    int totalAge = 0;
 
     cout << "==============================" << endl;
     cout << " Welcome to the Info Program! " << endl;
@@ -23,6 +25,9 @@ int main() {
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
 
+        peopleCount++;
+        totalAge += age;
+
         cout << "\n--------------------------------" << endl;
         cout << "Hello, " << name << "! You are " << age << " years old." << endl;
         if (age < 18)
@@ -38,6 +43,18 @@ int main() {
 
     } while (again == 'y' || again == 'Y');
 
-    cout << "\nThank you for using the program. Goodbye!" << endl;
+    cout << "\n========== SUMMARY ==========" << endl;
+    cout << "You entered information for " << peopleCount << " people." << endl;
+
+    if (peopleCount > 0) {
+        double avgAge = static_cast<double>(totalAge) / peopleCount;
+        cout << "Average age: " << avgAge << endl;
+    } else {
+        cout << "No data entered." << endl;
+    }
+
+    cout << "=============================" << endl;
+    cout << "Thank you for using the program. Goodbye!" << endl;
+
     return 0;
 }
