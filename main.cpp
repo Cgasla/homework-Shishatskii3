@@ -7,6 +7,8 @@ int main() {
     int age;
     char again;
 
+    cout << "Welcome to the simple info program!" << endl;
+
     do {
         cout << "Enter your name: ";
         cin >> name;
@@ -22,6 +24,6 @@ int main() {
 
     } while (again == 'y' || again == 'Y');
 
-    cout << "Goodbye!" << endl;
+    cout << "Thanks for using this program. Goodbye!" << endl;
     return 0;
 }
