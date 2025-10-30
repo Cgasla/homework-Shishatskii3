@@ -54,6 +54,7 @@ int main() {
     }
 
     cout << "=============================" << endl;
+    cout << "Program completed successfully!" << endl;
     cout << "Thank you for using the program. Goodbye!" << endl;
 
     return 0;
