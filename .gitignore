@@ -1,0 +1,12 @@
+# Ignore CLion and build files
+.idea/
+cmake-build-debug/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+*.exe
+*.o
+*.obj
+*.log
+*.dll
+*.pdb
