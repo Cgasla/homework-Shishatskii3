@@ -11,7 +11,7 @@ int main() {
     int totalAge = 0;
 
     cout << "==============================" << endl;
-    cout << " Welcome to the Info Program! " << endl;
+    cout << "Welcome to my cool C++ project!" << endl;
     cout << "==============================" << endl;
 
     do {
