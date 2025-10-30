@@ -12,6 +12,7 @@ int main() {
 
     cout << "==============================" << endl;
     cout << " Welcome to the Info Program! " << endl;
+    cout << "Let's collect some information!" << endl;
     cout << "==============================" << endl;
 
     do {
