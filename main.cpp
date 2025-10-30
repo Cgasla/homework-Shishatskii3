@@ -1,42 +1,27 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
-    double a, b, result;
-    char op;
+    string name;
+    int age;
+    char again;
 
-    cout << "Enter the first number: ";
-    cin >> a;
+    do {
+        cout << "Enter your name: ";
+        cin >> name;
 
-    cout << "Enter an operation (+, -, *, /): ";
-    cin >> op;
+        cout << "Enter your age: ";
+        cin >> age;
 
-    cout << "Enter the second number: ";
-    cin >> b;
+        cout << "Hello, " << name << "! You are " << age << " years old." << endl;
 
-    switch (op) {
-        case '+':
-            result = a + b;
-            break;
-        case '-':
-            result = a - b;
-            break;
-        case '*':
-            result = a * b;
-            break;
-        case '/':
-            if (b != 0)
-                result = a / b;
-            else {
-                cout << "Error: division by zero!" << endl;
-                return 1;
-            }
-            break;
-        default:
-            cout << "Unknown operation!" << endl;
-            return 1;
-    }
+        cout << "Would you like to enter another person? (y/n): ";
+        cin >> again;
+        cout << endl;
 
-    cout << "Result: " << result << endl;
+    } while (again == 'y' || again == 'Y');
+
+    cout << "Goodbye!" << endl;
     return 0;
 }
